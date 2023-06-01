@@ -1,0 +1,23 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "ir.mhbitarafan.sandoghche",
+      "sha256_cert_fingerprints": [
+        "AA:9A:8D:EF:AE:F2:D5:7C:26:31:95:22:E0:3B:35:63:F2:DB:0D:13:5E:37:39:6C:21:20:AD:38:01:F0:47:01"
+      ]
+    }
+  },
+  {
+    "relation": [
+      "check_validation"
+    ],
+    "target": {
+      "namespace": "cafebazaar_twa",
+      "package_name": "ir.mhbitarafan.sandoghche"
+    }
+  }
+]

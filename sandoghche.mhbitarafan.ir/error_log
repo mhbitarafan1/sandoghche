@@ -1,0 +1,104 @@
+[20-Jul-2022 03:26:57 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[20-Jul-2022 03:26:57 Asia/Tehran] PHP Fatal error:  require(): Failed opening required '/home/mhbitar1/sandoghche.mhbitarafan.ir/../vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[20-Jul-2022 03:27:46 Asia/Tehran] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/mhbitar1/sandoghche/vendor/composer/platform_check.php on line 25
+[20-Jul-2022 03:27:46 Asia/Tehran] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/mhbitar1/sandoghche/vendor/composer/platform_check.php on line 25
+[20-Jul-2022 03:27:47 Asia/Tehran] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 5.6.40. in /home/mhbitar1/sandoghche/vendor/composer/platform_check.php on line 25
+[21-Jul-2022 05:30:07 Asia/Tehran] PHP Fatal error:  Composer detected issues in your platform: Your Composer dependencies require a PHP version ">= 7.3.0". You are running 7.2.34. in /home/mhbitar1/sandoghche/vendor/composer/platform_check.php on line 24
+[28-Jul-2022 19:02:05 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:05 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:05 Asia/Tehran] PHP Fatal error:  require(): Failed opening required '/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:54 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:54 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:54 Asia/Tehran] PHP Fatal error:  require(): Failed opening required '/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:58 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:58 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:02:58 Asia/Tehran] PHP Fatal error:  require(): Failed opening required '/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:08:18 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:08:18 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:08:18 Asia/Tehran] PHP Fatal error:  require(): Failed opening required '/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:16:42 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:16:42 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:16:42 Asia/Tehran] PHP Fatal error:  require(): Failed opening required '/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:44:58 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:44:58 Asia/Tehran] PHP Warning:  require(/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php): failed to open stream: No such file or directory in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[28-Jul-2022 19:44:58 Asia/Tehran] PHP Fatal error:  require(): Failed opening required '/home/mhbitar1/sandoghche.mhbitarafan.ir/../sandoghche/vendor/autoload.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/mhbitar1/sandoghche.mhbitarafan.ir/index.php on line 24
+[08-Sep-2022 20:59:34 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 21:00:16 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 21:59:41 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 21:59:46 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 21:59:54 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 22:00:14 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 22:00:17 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 22:03:04 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 22:03:13 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
+[08-Sep-2022 22:03:49 Asia/Tehran] PHP Fatal error:  Uncaught Symfony\Component\Routing\Exception\RouteNotFoundException: Route [home] not defined. in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php:420
+Stack trace:
+#0 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Foundation/helpers.php(768): Illuminate\Routing\UrlGenerator->route('home', Array, true)
+#1 /home/mhbitar1/sandoghche/storage/framework/views/c4786a1a8902d5970cd080e40d6a31cfaaf3e7f1.php(7): route('home')
+#2 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/PhpEngine.php(41): include('/home/mhbitar1/...')
+#3 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/View/Engines/CompilerEngine.php(57): Illuminate\View\Engines\PhpEngine->evaluatePath('/home/mhbitar1/...', Array)
+#4 /home/mhbitar1/sandoghche/vendor/facade/ignition/src/Views/Engines/CompilerEngine.php(37): Illuminate\View\Engines\CompilerEngine->get('/home/mhbitar1/...', Array)
+#5 /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illum in /home/mhbitar1/sandoghche/vendor/laravel/framework/src/Illuminate/Routing/UrlGenerator.php on line 420
