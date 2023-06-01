@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Artisan;
 use Verta;
 use Carbon\Carbon;
 use App\Http\Requests\StoreLottery;
@@ -584,6 +585,37 @@ class LotteryController extends Controller
         $lottery->save();
         $isValid = (new BazaarController())->validatePurchase($lottery, $token, $productId);
         return response()->json(['is_valid' => $isValid]);
+    }
+    public function clearCache(){
+        Artisan::call('route:clear');
+        Artisan::call('view:clear');
+        Artisan::call('cache:clear');
+        Artisan::call('config:cache');
+        return 'ok';
+    }
+    public function redirectToLogin(){
+        return redirect('/login');
+    }
+    public function articlesDone(){
+        return 'done';
+    }
+    public function showPolicy(){
+        return view('policy');
+    }
+    public function usersDocuments(){
+        return view('users.documents.index');
+    }
+    public function usersDonates(){
+        return view('users.donates.index');
+    }
+    public function donateAdvertise(){
+        return 'inja safheye show advertise dar donate hast';
+    }
+    public function lotteryUpgrade(){
+        return 'inja safheye upgrade sandogh hast';
+    }
+    public function advertiseShow(){
+        return 'inja safheye show advertise hast';
     }
 
 }

@@ -18,8 +18,6 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
-Route::get('/articles', function() {
-    return 'done';
-});
+Route::get('/articles','LotteryController@articlesDone');
 
 Route::post('/lottery/{lotteryId}/validate-purchase/{productId}', 'LotteryController@validateLotteryPurchase')->name('lottery.upgrade.validate');
