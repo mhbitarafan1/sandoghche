@@ -591,6 +591,7 @@ class LotteryController extends Controller
         Artisan::call('view:clear');
         Artisan::call('cache:clear');
         Artisan::call('config:cache');
+        Artisan::call('optimize');
         return 'ok';
     }
     public function redirectToLogin(){
