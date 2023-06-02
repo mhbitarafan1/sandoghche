@@ -670,7 +670,7 @@
                                             <i class="fa fa-bank"> </i>  &nbsp;مشخصات صندوق
                                         </a>
                                         <a style="margin-right:0px;font-size: 17px; "
-                                        href=" @if ($nextLot->number < 3) {{route('lots.withoutadvertise.show',$lottery->id)}} @else {{route('lots.show',$lottery->id)}} @endif " class="btn btn-info  btn-block">
+                                        href=" @if ($nextLot && $nextLot->number < 3) {{route('lots.withoutadvertise.show',$lottery->id)}} @else {{route('lots.show',$lottery->id)}} @endif " class="btn btn-info  btn-block">
                                             <i class="fa fa-flash"> </i>
                                             @if ($amIManager)&nbsp;قرعه ها و اقساط @else جزئیات قرعه ها @endif
                                         </a>
