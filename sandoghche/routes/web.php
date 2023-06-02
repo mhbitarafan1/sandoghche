@@ -15,18 +15,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/', function () {
-    return redirect('/login');
-});
+Route::get('/','LotteryController@redirectToLogin');
 
-Route::get('clear',function ()
-{
-    Artisan::call('route:clear');
-    Artisan::call('view:clear');
-    Artisan::call('cache:clear');
-    Artisan::call('config:cache');
-    return 'ok';
-});
+Route::get('clear','LotteryController@clearCache')->name('clear.cache');
 // Route::get('migrate',function ()
 // {
 //     Artisan::call('migrate');
@@ -38,7 +29,7 @@ Route::get('home/showactivecodeform2','ActivationCode2Controller@showForm')->nam
 Route::post('register2','Register2Controller@register')->name('register2');
 Route::get('home/showactivecodeform','ActivationCodeController@showForm')->name('show.activation.code');
 Route::post('login2','Login2Controller@login')->name('login2');
-Route::get('policy', function () {return view('policy');})->name('policy');
+Route::get('policy','LotteryController@showPolicy')->name('policy');
 
 Route::middleware(['auth',])->group(function () {
     Route::get('/home', 'LotteryController@index')->name('home');
@@ -74,8 +65,8 @@ Route::middleware(['auth',])->group(function () {
 
     Route::resource('home/tickets','TicketController');
     Route::post('home/closeticket','TicketController@dontNeedAnswerTicket')->name('ticket.dontneedanswer');
-    Route::get('home/documents',function (){return view('users.documents.index');})->name('ducument');
-    Route::get('home/donate',function (){return view('users.donates.index');})->name('donate');
+    Route::get('home/documents','LotteryController@usersDocuments')->name('ducument');
+    Route::get('home/donate','LotteryController@usersDonates')->name('donate');
     Route::get('home/reportlottery/{id}','LotteryController@reportLotteryCreate')->name('lottery.report.create');
     Route::post('home/reportlottery','LotteryController@reportLotteryStore')->name('lottery.report.store');
 
@@ -83,9 +74,9 @@ Route::middleware(['auth',])->group(function () {
 
 
     //for advertise
-    Route::get('home/donate/showadvertise',function (){return 'inja safheye show advertise dar donate hast';})->name('donate.advertise.show');
-    Route::get('home/lotteries/{lotteryId}/upgrade',function (){return 'inja safheye upgrade sandogh hast';})->name('lottery.upgrade');
-    Route::get('home/showadvertise',function (){return 'inja safheye show advertise hast';})->name('advertise.show');
+    Route::get('home/donate/showadvertise','LotteryController@donateAdvertise')->name('donate.advertise.show');
+    Route::get('home/lotteries/{lotteryId}/upgrade','LotteryController@lotteryUpgrade')->name('lottery.upgrade');
+    Route::get('home/showadvertise','LotteryController@advertiseShow')->name('advertise.show');
 
 
 
