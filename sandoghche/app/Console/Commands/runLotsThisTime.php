@@ -140,7 +140,7 @@ class runLotsThisTime extends Command
 
                 }else{
 
-                    $lotLog = " قرعه کشی در زمان مقرر انجام نشد چون هیچ سهامی قابلیت شرکت در قرعه کشی را نداشت\n";
+                    $lotLog = " قرعه کشی در زمان مقرر انجام نشد چون پرداخت قسط هیچ کدام از سهام ها تایید نشده\n";
                     $onTimeLot->update([
                         'log' => $lotLog,
                     ]);
