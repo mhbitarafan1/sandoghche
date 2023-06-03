@@ -260,8 +260,8 @@
 
 
                         @if(count($myLotteries)==0)
-                            <div class="alert alert-warning">شما در هیچ صندوق قرعه کشی عضو نیستید
-                            <a class="btn btn-primary center-block"><i class="fa fa-plus-circle"></i> ایجاد صندوق جدید</a>
+                            <div class="alert alert-warning">شما در هیچ صندوق قرعه کشی عضو نیستید!
+                            <br><br><a href="{{ route('lotteries.create') }}" class="btn btn-primary center-block"><i class="fa fa-plus-circle"></i> ایجاد صندوق جدید</a>
                             </div>
 
                         @endif
