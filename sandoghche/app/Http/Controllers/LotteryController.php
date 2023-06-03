@@ -72,8 +72,17 @@ class LotteryController extends Controller
      */
     public function store(StoreLottery $request)
     {
-        $countLotteryManageNotFinishing = Lottery::where('lottery_manager_id',auth()->user()->id)->where('status','!=','پایان یافته')->count();
-
+        //avoid creating Repeat lotteries
+        if(auth()->user()->lotterymanager && Lottery::where('lottery_manager_id',auth()->user()->lotterymanager->id)->latest()->first() )
+        {
+            $isRepeat = (Lottery::where('lottery_manager_id',auth()->user()->lotterymanager->id)->latest()->first()->created_at <= now()->subSeconds(20))?false:true;
+            if($isRepeat == true)
+            {
+                return redirect(route('my.lotteries'));
+            }
+        }
+        //avoid creating more than 5 lottery
+        $countLotteryManageNotFinishing = Lottery::where('lottery_manager_id',auth()->user()->lotterymanager->id)->where('status','!=','پایان یافته')->count();
         if ($countLotteryManageNotFinishing >= 5) {
             Alert::warning('ناموفق','امکان مدیریت بیش از ۵ صندوق که هنوز پایان نیافته نمی باشد');
             return redirect(route('home'));
