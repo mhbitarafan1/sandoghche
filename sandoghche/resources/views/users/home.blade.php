@@ -483,7 +483,7 @@
 
                                 </div>
 
-                                <div style="text-align: center;">    {{$otherLotteries->appends(['myLotteries' => $myLotteries->currentPage()])->links()}}    </div>
+{{--                                <div style="text-align: center;">    {{$otherLotteries->appends(['myLotteries' => $myLotteries->currentPage()])->links()}}    </div>--}}
 
 
                             </div>
