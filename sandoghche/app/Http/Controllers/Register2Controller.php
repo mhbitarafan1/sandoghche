@@ -40,7 +40,7 @@ class Register2Controller extends Controller
                 });
 
 
-    			return redirect('home');
+    			return redirect('home/mylotteries');
     			}
 
             $request->session()->put('phoneNumber',$phoneNumber);
