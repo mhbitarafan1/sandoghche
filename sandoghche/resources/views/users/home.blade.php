@@ -260,7 +260,10 @@
 
 
                         @if(count($myLotteries)==0)
-                            <p class="alert alert-warning">شما در هیچ صندوق قرعه کشی عضو نیستید ...</p>
+                            <div class="alert alert-warning">شما در هیچ صندوق قرعه کشی عضو نیستید
+                            <a class="btn btn-primary center-block"><i class="fa fa-plus-circle"></i> ایجاد صندوق جدید</a>
+                            </div>
+
                         @endif
 
 

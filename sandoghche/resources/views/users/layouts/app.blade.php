@@ -400,8 +400,8 @@
             <div class="pull-left">
                 <ul class="nav_bottom" >
                     <li style="text-align: center">
-                        <a href="{{ route('home') }}"><i class="fa fa-home"></i>
-                        <br><span style="font-size: 10px">صندوقچه</span></a>
+                        <a href="{{ route('home') }}"><i class="fa fa-search"></i>
+                        <br><span style="font-size: 10px">صندوق ها</span></a>
                     </li>
                     {{-- <a href="{{ route('payments.index') }}"><i class="fa fa-credit-card"></i></a> --}}
 
@@ -431,8 +431,8 @@
                         <br><span style="font-size: 10px">مالی</span></a>
                     </li>
                     <li style="text-align: center">
-                        <a href="{{ route('my.lotteries') }}"><i class="fa fa-user"></i>
-                        <br><span style="font-size: 10px">وام من</span></a>
+                        <a href="{{ route('my.lotteries') }}"><i class="fa fa-home"></i>
+                        <br><span style="font-size: 10px">صندوقچه</span></a>
                     </li>
 
                 </ul>

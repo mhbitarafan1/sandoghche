@@ -23,7 +23,7 @@ class Login2Controller extends Controller
     		$activeCode = ActivationCode::where('user_id',$user->id)->first()->code;
     		if ($request->active_code == $activeCode) {
     			Auth::login($user);
-    		return redirect('home');
+    		return redirect('home/mylotteries');
     		}
 
                  Alert::warning('ورود ناموفق', 'کد وارد شده اشتباه است');
