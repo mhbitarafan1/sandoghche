@@ -64,25 +64,13 @@
                                 <div>
 
 
-                                    {{-- <div class="x_title">
-                                        <h2>قرعه های صندوق فلان</h2>
-                                         <ul class="nav navbar-right panel_toolbox">
-                                            <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
-                                            </li>
-                                            <li class="dropdown">
-                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href="#">تنظیمات 1</a>
-                                                    </li>
-                                                    <li><a href="#">تنظیمات 2</a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li><a class="close-link"><i class="fa fa-close"></i></a>
-                                            </li>
-                                        </ul>
+                                     <div class="x_title">
+                                        <h2>
+                                            اعضای صندوق
+                                        </h2>
+
                                         <div class="clearfix"></div>
-                                    </div> --}}
+                                    </div>
 
 
                                     <ul class="list-unstyled top_profiles scroll-view">
@@ -214,6 +202,10 @@
                             <div style="color: #393">
                                 <p>* فقط سهام هایی که پرداخت اقساطشان تایید شده باشد (سبز) در قرعه کشی پیش رو شرکت داده می شوند</p>
                             </div>
+                            <a style="margin-right:0px;font-size: 17px; " href="{{ route('lotteries.show',$lottery->id) }}" class="btn btn-info  btn-block">
+                                <i class="fa fa-backward"> </i>
+                                رفتن به صفحه صندوق
+                            </a>
 
 
                             @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))

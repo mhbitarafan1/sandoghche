@@ -222,7 +222,7 @@ class LotteryController extends Controller
         //    return redirect(route('invite.friends.create',[$lotteryId]));
 
         // Alert::success('موفقیت آمیز','صندوق با موفقیت ایجاد شد');
-        return redirect(route('lotteries.show',[$lotteryId]));
+        return redirect(route('stocks.lottery.index',[$lotteryId]));
     }
 
     /**
