@@ -31,7 +31,8 @@
 
                     <div class="x_title">
                         <h2>قرعه های صندوق
-                            {{$lottery->name}}
+                            {{ mb_substr($lottery->name,0,22) }}
+
                             {{-- <small>واریزها و برداشت ها</small> --}}
 
                         </h2>
