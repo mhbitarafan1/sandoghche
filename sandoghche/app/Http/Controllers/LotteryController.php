@@ -49,7 +49,9 @@ class LotteryController extends Controller
 
         }
 
-        return view('users.home',compact('otherLotteries','users','lotteryManagers','lotteryStocks','myLotteries','lotteryInvites'));
+        $bestLotteries = Lottery::whereIn('status',['در حال برگزاری','پایان یافته'])->orderBy('count_of_view','DESC')->paginate(24);
+
+        return view('users.home',compact('otherLotteries','users','lotteryManagers','lotteryStocks','myLotteries','lotteryInvites','bestLotteries'));
 
     }
 
@@ -390,15 +392,16 @@ class LotteryController extends Controller
     public function lotterySearch(Request $request)
     {
         $lotteryInvites=false;
+        $lotteriesSearched = true;
         if (isset($request->searchlottery) && $request->searchlottery != Null) {
             $searchLottery = $request->searchlottery;
             $myLotteries = Lottery::whereHas('lotterystocks', function($q){$q->where('owner', auth()->user()->id);})->orWhere('lottery_manager_id',LotteryManager::where('user_id',auth()->user()->id)->first()->id)->latest()->paginate(4, ['*'], 'myLotteries');
-            $otherLotteries = Lottery::where('name','like','%'.$searchLottery.'%')->latest()->paginate(6, ['*'], 'otherLotteries');
+            $otherLotteries = Lottery::where('name','like','%'.$searchLottery.'%')->latest()->paginate(24, ['*'], 'otherLotteries');
             $users = User::all();
             $lotteryManagers = LotteryManager::all();
             $lotteryStocks = LotteryStock::all();
 
-            return view('users.home',compact('otherLotteries','users','lotteryManagers','lotteryStocks','myLotteries','lotteryInvites'));
+            return view('users.home',compact('lotteriesSearched','otherLotteries','users','lotteryManagers','lotteryStocks','myLotteries','lotteryInvites'));
         }else{
             return back();
         }
