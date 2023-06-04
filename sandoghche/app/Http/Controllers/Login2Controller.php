@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Invite;
 use Illuminate\Http\Request;
 use App\User;
 use Illuminate\Support\Facades\Auth;
@@ -23,7 +24,13 @@ class Login2Controller extends Controller
     		$activeCode = ActivationCode::where('user_id',$user->id)->first()->code;
     		if ($request->active_code == $activeCode) {
     			Auth::login($user);
-    		return redirect('home/mylotteries');
+                if(Invite::where('phone_number',auth()->user()->phone_number)->count() >= 1)
+                {
+                    return redirect('home');
+                }else
+                {
+                    return redirect('home/mylotteries');
+                }
     		}
 
                  Alert::warning('ورود ناموفق', 'کد وارد شده اشتباه است');
