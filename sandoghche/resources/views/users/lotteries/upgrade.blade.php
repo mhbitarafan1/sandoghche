@@ -43,13 +43,20 @@
 
     صرفا تعداد محدودی از امکانات که در پایین مشاهده می نمایید غیررایگان بوده و در صورت تمایل می توانید نسخه کامل را تهیه نمایید.
     <br><br> --}}
-    <strong>امکانات نسخه رایگان :</strong><br>
-    <i class="fa fa-check blue" ></i> ایجاد،مدیریت و برگزاری صندوق وام فامیلی<br>
-    <i class="fa fa-check blue" ></i> ثبت اطلاعات پرداختی اقساط اعضا<br>
-    <i class="fa fa-check blue" ></i> امکان اجرای قرعه کشی تصادفی توسط سیستم<br>
-    <i class="fa fa-check blue" ></i> اطلاع اعضای صندوق از وضعیت پرداخت سایر اعضا <br>
-    <i class="fa fa-check blue" ></i> افزودن اعضای صندوق تا ۱۰۰ نفر<br>
-    <i class="fa fa-check blue"></i> نمایش خلاصه عملکرد مالی<br>
+    @if($lottery->upgraded == 0 && $lottery->lots->where('stock_winner','=',NULL)->first()->number >= 4)
+        مهلت استفاده از امکانات رایگان برای صندوق {{$lottery->name}} به پایان رسیده است  جهت ادامه می بایست صندوق را ارتقا دهید.
+        <br>
+
+    @else
+        <strong>امکانات نسخه رایگان :</strong><br>
+        <i class="fa fa-check blue" ></i> مدیریت و برگزاری صندوق وام فامیلی تا ۳ قسط<br>
+        <i class="fa fa-check blue" ></i> ثبت اطلاعات پرداختی اقساط اعضا<br>
+        <i class="fa fa-check blue" ></i> امکان اجرای قرعه کشی تصادفی توسط سیستم<br>
+        <i class="fa fa-check blue" ></i> اطلاع اعضای صندوق از وضعیت پرداخت سایر اعضا <br>
+        <i class="fa fa-check blue" ></i> افزودن اعضای صندوق تا ۱۰۰ نفر<br>
+        <i class="fa fa-check blue"></i> نمایش خلاصه عملکرد مالی<br>
+    @endif
+
     <strong>امکانات نسخه ارتقا یافته :</strong><br>
     <i class="fa fa-check green"></i> تمامی امکانات نسخه رایگان<br>
     <i class="fa fa-check green" ></i> اطلاع رسانی پیامکی تمام رویدادهای صندوق<br>
@@ -65,12 +72,12 @@
             $count = $lottery->count_of_lots;
             $cost = null;
             switch(true) {
-                case $count <= 20: $cost = 50; break;
-                case $count <= 40: $cost = 100; break;
-                case $count <= 60: $cost = 150; break;
-                case $count <= 80: $cost = 200; break;
-                case $count <= 100: $cost = 250; break;
-                default: $cost = 300; break;
+                case $count <= 20: $cost = 100; break;
+                case $count <= 40: $cost = 200; break;
+                case $count <= 60: $cost = 300; break;
+                case $count <= 80: $cost = 400; break;
+                case $count <= 100: $cost = 450; break;
+                default: $cost = 500; break;
             }
             @endphp
 
