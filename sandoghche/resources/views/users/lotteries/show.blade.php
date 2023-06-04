@@ -5,7 +5,7 @@
 {{$lottery->name}}
 @endsection
 @section('title2')
-{{$lottery->name}}
+{{ mb_substr($lottery->name,0,30) }}
 @endsection
 
 
