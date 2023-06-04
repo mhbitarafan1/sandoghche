@@ -636,8 +636,8 @@
                                             ">{{$lottery->status}}</span>
                                                                     </div>
                                                                     <br>
-                                                                    <p><strong>وام: </strong>{{number_format($lottery->amount)}} تومان<br></p>
-                                                                    <p><strong>تعداد اقساط: </strong>{{$lottery->count_of_lots}} قسط</p>
+                                                                    <p><strong>وام: </strong>{{number_format($lottery->amount)}} تومان {{$lottery->count_of_lots}} قسط<br></p>
+{{--                                                                    <p><strong>تعداد اقساط: </strong>{{$lottery->count_of_lots}} قسط</p>--}}
                                                                     {{-- <p><strong>{{$lottery->cycle}}</strong> {{number_format($lottery->amount/$lottery->count_of_lots)}} تومان</p> --}}
                                                                     <p><strong>شروع: </strong>
                                                                         {{verta($lottery->time_of_first_lot)->format('j %B %Y ساعت G')}}
@@ -661,9 +661,9 @@
 
                                                                        </div></p> --}}
 
-                                                                    <p><strong>قرعه کشی : </strong> توسط
-                                                                        {{$lottery->type_of_choose_winner}}
-                                                                    </p>
+{{--                                                                    <p><strong>قرعه کشی : </strong> توسط--}}
+{{--                                                                        {{$lottery->type_of_choose_winner}}--}}
+{{--                                                                    </p>--}}
                                                                     {{-- <p><strong>قابل خرید: </strong>
                                                                         {{count($lottery->lotterystocks->where('owner',null))}}
                                                                      سهم</p> --}}
