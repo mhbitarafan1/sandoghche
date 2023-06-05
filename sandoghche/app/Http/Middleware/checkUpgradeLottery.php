@@ -16,7 +16,7 @@ class checkUpgradeLottery
      */
     public function handle($request, Closure $next)
     {
-        $LotteriesManageNotUpgraded = Lottery::where('lottery_manager_id',auth()->user()->lotterymanager->id)->where('upgraded','!=',1)->get();
+        $LotteriesManageNotUpgraded = Lottery::where('lottery_manager_id',auth()->user()->lotterymanager->id)->where('upgraded','!=',1)->where('status','!=','پایان یافته')->get();
         foreach ($LotteriesManageNotUpgraded as $lottery)
         {
             $nextLot = $lottery->lots->where('stock_winner','=',NULL)->first()->number;

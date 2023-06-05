@@ -43,7 +43,7 @@
 
     صرفا تعداد محدودی از امکانات که در پایین مشاهده می نمایید غیررایگان بوده و در صورت تمایل می توانید نسخه کامل را تهیه نمایید.
     <br><br> --}}
-    @if($lottery->upgraded == 0 && $lottery->lots->where('stock_winner','=',NULL)->first()->number >= 4)
+    @if($lottery->upgraded == 0 && $lottery->lots->where('stock_winner','=',NULL)->first() && $lottery->lots->where('stock_winner','=',NULL)->first()->number >= 4)
         مهلت استفاده از امکانات رایگان برای صندوق {{$lottery->name}} به پایان رسیده است  جهت ادامه می بایست صندوق را ارتقا دهید.
         <br>
 

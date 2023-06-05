@@ -664,7 +664,7 @@
 
                                         <a style="margin-right:0px;font-size: 17px; " href="{{ route('stocks.lottery.index',$lottery->id) }}" class="btn btn-info  btn-block">
                                             <i class="fa fa-group"> </i>
-                                            @if ($amIManager && $nextLot->number < 2 )  &nbsp;افزودن اعضاء @else  &nbsp;اعضای صندوق  @endif
+                                            @if ($amIManager && $nextLot && $nextLot->number < 2 )  &nbsp;افزودن اعضاء @else  &nbsp;اعضای صندوق  @endif
                                         </a>
                                         <a style="margin-right:0px;font-size: 17px; " href="{{ route('lottery.info.show',$lottery->id)}}" class="btn btn-info  btn-block">
                                             <i class="fa fa-bank"> </i>  &nbsp;مشخصات صندوق
