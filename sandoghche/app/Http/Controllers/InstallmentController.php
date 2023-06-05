@@ -87,6 +87,10 @@ class InstallmentController extends Controller
              Alert::warning('تایید پرداخت ناموفق', 'این سهام  هنوز از قرعه های قبلی بدهکار است و تا اونها رو پرداخت نکند نمی تواند قسط این قرعه را پرداخت کند.');
              return back();
         }
+        if ($installment->paid == 1)
+        {
+            return back();
+        }
 
             $installmentAmount = (Lot::find($installment->lot_id)->amount)/
             $lottery->count_of_lots;
