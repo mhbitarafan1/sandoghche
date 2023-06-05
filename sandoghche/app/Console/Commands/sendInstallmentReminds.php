@@ -2,6 +2,8 @@
 
 namespace App\Console\Commands;
 
+use App\LotteryManager;
+use App\Notifications\ManagerRemind;
 use Illuminate\Console\Command;
 use App\Lot;
 use App\Installment;
@@ -44,11 +46,18 @@ class sendInstallmentReminds extends Command
      */
     public function handle()
     {
-
         $onTimeLots = Lot::where('time_holding','>', now())->where('time_holding','<=',
         Carbon::now()->addDays(2))->where('time_holding','>',Carbon::now()->addDays(1))->get();
         foreach ($onTimeLots as $onTimeLot) {
-             $lotteryOfThisLot = lottery::where('id',$onTimeLot->lottery_id)->first();
+            $lotteryOfThisLot = lottery::where('id',$onTimeLot->lottery_id)->first();
+
+             //send SMS Remind accept payments for manager of Lottery
+            $lotteryManager = User::where('id',LotteryManager::where('id',$lotteryOfThisLot->lottery_manager_id)->first()->user_id)->first();
+            $userName = $lotteryManager->name;
+            $lotteryName = $lotteryOfThisLot->name;
+            $phoneNumber = $lotteryManager->phone_number;
+            $lotteryManager->notify(new ManagerRemind($userName,$lotteryName,$phoneNumber));
+
             if ($lotteryOfThisLot->upgraded == false) {
                 continue;
             }
