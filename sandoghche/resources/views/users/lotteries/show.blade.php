@@ -224,12 +224,15 @@
                                 @else
 
 
-                                {{-- <form action="{{ route('installments.manage',$nextLot->id) }}">
-                                    @csrf
-                                    <div class="text-center"><br>
-                                    <input class="btn btn-default btn-lg" type="submit" value="مدیریت اقساط این قرعه">
-                                    </div>
-                                </form> --}}
+                                    @if($nextLot->number <= 2)
+                                            <form action="{{ route('installments.manage',$nextLot->id) }}">
+                                                @csrf
+                                                <div class="text-center"><br>
+                                                    <input class="btn btn-danger btn-lg" type="submit" value="مدیریت اقساط این قرعه">
+                                                </div>
+                                            </form>
+                                    @endif
+
 
 
 
