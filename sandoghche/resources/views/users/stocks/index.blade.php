@@ -72,6 +72,12 @@
                                         <div class="clearfix"></div>
                                     </div>
 
+                                    @if($amIManager && $nextLot && $nextLot->number <= 2)
+                                        <div style="color: #393">
+                                            <p>* در این قسمت می توانید اعضا را مدیریت نمایید. با افزودن اعضا پیامک های اطلاع رسانی برایشان ارسال خواهد شد و با وارد شدن به حساب کاربری خود می توانند اطلاعات صندوق را مشاهده نمایند.</p>
+                                        </div>
+                                    @endif
+
 
                                     <ul class="list-unstyled top_profiles scroll-view">
                                         @foreach ($stocks as $stock)
@@ -200,8 +206,16 @@
 
 
                             <div style="color: #393">
-                                <p>* فقط سهام هایی که پرداخت اقساطشان تایید شده باشد (سبز) در قرعه کشی پیش رو شرکت داده می شوند</p>
+                                <p>* حتما می بایست پرداخت اقساط اعضا تایید شود تا در قرعه کشی پیش رو شرکت داده شوند.
+                                    @if($amIManager && $nextLot && $nextLot->number <= 2)
+                                        جهت مدیریت اقساط وارد صفحه قرعه ها و اقساط شوید. </p>
+                                @endif
                             </div>
+                            <a style="margin-right:0px;font-size: 17px; "
+                               href=" @if ($nextLot && $nextLot->number < 3) {{route('lots.withoutadvertise.show',$lottery->id)}} @else {{route('lots.show',$lottery->id)}} @endif " class="btn btn-info  btn-block">
+                                <i class="fa fa-backward"> </i>
+                                قرعه ها و اقساط
+                            </a>
                             <a style="margin-right:0px;font-size: 17px; " href="{{ route('lotteries.show',$lottery->id) }}" class="btn btn-info  btn-block">
                                 <i class="fa fa-backward"> </i>
                                 رفتن به صفحه صندوق
