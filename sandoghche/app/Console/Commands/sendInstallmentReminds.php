@@ -51,6 +51,13 @@ class sendInstallmentReminds extends Command
         foreach ($onTimeLots as $onTimeLot) {
             $lotteryOfThisLot = lottery::where('id',$onTimeLot->lottery_id)->first();
 
+            //avoid to send for lots of deactive lotteries
+            $allLotsOfThisLottery = Lot::where('lottery_id',$onTimeLot->lottery_id)->get();
+            $nextLot=$allLotsOfThisLottery->where('stock_winner','=',NULL)->first();
+            if ($nextLot && $nextLot->id != $onTimeLot->id) {
+                continue;
+            }
+
              //send SMS Remind accept payments for manager of Lottery
             $lotteryManager = User::where('id',LotteryManager::where('id',$lotteryOfThisLot->lottery_manager_id)->first()->user_id)->first();
             $userName = $lotteryManager->name;
