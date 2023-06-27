@@ -47,6 +47,9 @@
                     </div> --}}
                     <div class="x_content">
 
+                        در صورت نیاز به پشتیبانی با شماره ۰۹۰۴۴۹۸۱۸۸۶ تماس بگیرید و یا فرم زیر را پرنمایید و دکمه ارسال را بزنید.
+                        <br>
+
                     	@if ($errors->any()>0)
                     		@foreach ($errors->all() as $error)
                     			<li>{{$error}}</li>
@@ -60,7 +63,7 @@
                         	@csrf
 
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">موضوع
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="title">عنوان
                                     <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">

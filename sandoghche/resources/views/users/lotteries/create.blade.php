@@ -53,6 +53,7 @@
 
                     <div class="x_content">
 
+                        جهت ایجاد صندوق فرم زیر را پر نموده و دکمه ایجاد صندوق رو بزنید.<br>
 
                     	@if ($errors->any()>0)
                         <div class="alert alert-danger">

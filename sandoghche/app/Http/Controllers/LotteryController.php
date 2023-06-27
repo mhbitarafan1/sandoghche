@@ -100,14 +100,12 @@ class LotteryController extends Controller
             return back();
         }
 
-
-
         DB::transaction(function () use($miladiTime,$request,$amount,$jalaliTime) {
             $lottery = Lottery::create([
                 'lottery_manager_id' => auth()->user()->lotterymanager->id,
                 'time_of_first_lot' => $miladiTime,
-                'slug' => $request->name,
-                "name" => $request->name,
+                'slug' => str_replace(["صندوق ","بانک ","سهام عدالت "],"",$request->name),
+                "name" => str_replace(["صندوق ","بانک ","سهام عدالت "],"",$request->name),
                 "amount" => $amount,
                 "cycle" => $request->cycle,
                 "count_of_lots" =>$request->count_of_lots,

@@ -233,19 +233,27 @@
                 @if ($amIManager)
                   {{-- expr --}}
 
-                                            <a href="{{ route('lotteries.show', [$lottery->id]) }}#stocksLocation" style="font-size: 100%;" class="label label-info">
-                                                <i class="fa fa-shopping-cart"> </i>سهام ها
+                                            <a href="{{ route('lotteries.show', [$lottery->id]) }}" style="font-size: 100%;" class="label label-info">
+                                                <i class="fa fa-shopping-cart"> </i>ورود
                                             </a>&nbsp;
-                                            <a href="{{ route('invite.friends.create',[$lottery->id]) }}" style="font-size: 100%;" class="label label-warning">
-                                                <i class="fa fa-send"> </i> دعوت دوستان
-                                            </a>
+{{--                                            <a href="{{ route('invite.friends.create',[$lottery->id]) }}" style="font-size: 100%;" class="label label-warning">--}}
+{{--                                                <i class="fa fa-send"> </i> دعوت دوستان--}}
+{{--                                            </a>--}}
+                     <a style="font-size: 100%;" class="label label-warning" href="{{ route('stocks.lottery.index',$lottery->id) }}" >
+                         <i class="fa fa-group"> </i>
+                         &nbsp;اعضای صندوق
+                     </a>
                 @else
 
-                <a href="{{ route('stockrequests.create',[$lottery->id,'buy']) }}" style="font-size: 100%;" class="label label-primary">
-                                                <i class="fa fa-arrow-circle-up"> </i>افزایش سهام
-                                            </a>&nbsp;
+                     <a href="{{ route('lotteries.show', [$lottery->id]) }}#stocksLocation" style="font-size: 100%;" class="label label-info">
+                         <i class="fa fa-shopping-cart"> </i>ورود
+                     </a>&nbsp;
+{{--                 --}}
+{{--                <a href="{{ route('stockrequests.create',[$lottery->id,'buy']) }}" style="font-size: 100%;" class="label label-primary">--}}
+{{--                                                <i class="fa fa-arrow-circle-up"> </i>افزایش سهام--}}
+{{--                                            </a>&nbsp;--}}
                 <a href="{{ route('stockrequests.create',[$lottery->id,'sell']) }}" style="font-size: 100%;" class="label label-danger">
-                                                <i class="fa fa-arrow-circle-down"> </i> واگذاری
+                                                <i class="fa fa-arrow-circle-down"> </i> واگذاری سهم
                                             </a>
 
 

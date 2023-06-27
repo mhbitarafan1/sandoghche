@@ -678,6 +678,11 @@
                                             <i class="fa fa-flash"> </i>
                                             @if ($amIManager)&nbsp;قرعه ها و اقساط @else جزئیات قرعه ها @endif
                                         </a>
+                                        @if ($amIManager)
+                                            <a href="{{ route('invite.friends.create',[$lottery->id]) }} " style="margin-right:0px;font-size: 17px; " class="btn btn-info  btn-block">
+                                                <i class="fa fa-send"> </i> دعوت دوستان
+                                            </a>
+                                        @endif
                                         {{-- <h3 class="green"><i class="fa fa-paint-brush"></i> عملیات ها</h3> --}}
                                         <div class="mtop20">
                                             @if (!$amIManager)
