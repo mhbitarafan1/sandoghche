@@ -8,6 +8,7 @@ use App\LotteryStock;
 use App\User;
 use App\Lottery;
 use App\Installment;
+use Illuminate\Support\Facades\Auth;
 use RealRashid\SweetAlert\Facades\Alert;
 use App\Order;
 use App\Payment;
@@ -80,6 +81,13 @@ class InstallmentController extends Controller
         $installment = Installment::where('id',$id)->first();
         $stock = LotteryStock::find($installment->lottery_stock_id);
         $lottery = Lottery::where('id',$stock->lottery_id)->first();
+        $adminLotteryUserId = User::where('id',LotteryManager::where('id',$lottery->lottery_manager_id)->first()->user_id)->first()->id;
+
+        if (Auth::user()->id != $adminLotteryUserId)
+        {
+            Alert::warning('تایید پرداخت ناموفق', 'فقط مدیر صندوق می تواند تایید کند');
+            return back();
+        }
 
         $countOfPaidInstallmentsForPreviusLots = count($stock->installments->where('id','<',$installment->id)->where('paid',true));
         $numberOfPreviusLot = Lot::find($installment->lot_id)->number-1 ;

@@ -178,6 +178,13 @@
                                         @endforeach
 
                                     </ul>
+
+                                    <a style="margin-right:0px;font-size: 17px; " href="{{ route('lotteries.show',$lottery->id) }}" class="btn btn-info  btn-block">
+                                        <i class="fa fa-backward"> </i>
+                                        برگشت به صفحه صندوق
+                                    </a><br>
+
+
                                 </div>
                             </div>
 

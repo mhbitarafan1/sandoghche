@@ -165,7 +165,10 @@
                                                     </table>
 
 
-
+                        <a style="margin-right:0px;font-size: 17px; " href="{{ route('lotteries.show',$lottery->id) }}" class="btn btn-info  btn-block">
+                            <i class="fa fa-backward"> </i>
+                            برگشت به صفحه صندوق
+                        </a><br>
                                                     @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
                                                     <div style="text-align: center;">
                                                         <div id="mediaad-G7PR5"></div>
