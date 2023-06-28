@@ -66,7 +66,7 @@
     <i class="fa fa-check green"></i> پاسخگویی ۲۴ ساعته از قسمت پشتیبانی برنامه<br>
     <i class="fa fa-check green"></i> امکان گرفتن خروجی pdf از صندوق<br>
     {{-- <i class="fa fa-check green"></i> امکان استفاده از درگاه جهت پرداخت اقساط (به زودی)<br> --}}
-    <span style="text-align: center" class="label label-primary">مبلغ قابل پرداخت برای کل دوره :
+    <span style="text-align: center" class="label label-primary">قابل پرداخت برای کل دوره :
 
             @php
             $count = $lottery->count_of_lots;
@@ -76,15 +76,15 @@
                 case $count <= 40: $cost = 200; break;
                 case $count <= 60: $cost = 300; break;
                 case $count <= 80: $cost = 400; break;
-                case $count <= 100: $cost = 450; break;
-                default: $cost = 500; break;
+                case $count <= 100: $cost = 500; break;
+                default: $cost = 600; break;
             }
             @endphp
 
       {{$cost}}
 
 
-        هزار تومان</span><br><br>
+        هزار تومان + 9٪ مالیات</span><br><br>
 
     <div class="col-md-6 col-sm-6 col-xs-12 col-md-offset-3 text-center">
         <a style="margin-right:0px;" href="pay/{{$productId}}" class="btn btn-success ">

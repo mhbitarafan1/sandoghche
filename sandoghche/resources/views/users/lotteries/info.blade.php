@@ -209,7 +209,6 @@
 
 
 
-z
 
                                     @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
                                     <div style="text-align: center;">

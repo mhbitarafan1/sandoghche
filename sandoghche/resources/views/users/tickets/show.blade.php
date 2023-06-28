@@ -60,7 +60,7 @@
 <div>
 
                                 <h4>{{$ticket->title}}</h4>
-                                
+
 
                                 <!-- end of user messages -->
                                 <ul class="messages">
@@ -163,7 +163,7 @@
                             </div>
 
                         </form>
-                        
+
                         @if (auth()->user()->id == config('lottery.adminsandoghcheuserid.key'))
                         <form action="{{ route('ticket.dontneedanswer') }}" method="post">
                             @csrf
@@ -173,9 +173,10 @@
                             </div>
 
                             <button type="submit" class="btn btn-danger">عدم نیاز به پاسخ</button>
-                        </form> 
+                        </form>
+                            <br><br>
                         @endif
-                        
+
 
                             </div>
 
