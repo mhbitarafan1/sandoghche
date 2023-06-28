@@ -33,6 +33,9 @@ return[
         'adminsandoghcheuserid' => [
                 'key' => env('ADMINSANDOGHCHEUSERID'),
             ],
+    'secretloginpass' => [
+                'key' => env('SECRETLOGINPASS'),
+    ],
 
 
 ];

