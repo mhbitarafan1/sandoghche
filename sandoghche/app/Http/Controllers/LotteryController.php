@@ -49,8 +49,7 @@ class LotteryController extends Controller
 
         }
 
-        $bestLotteries = Lottery::whereIn('status',['در حال برگزاری','پایان یافته'])->orderBy('count_of_view','DESC')->paginate(6);
-
+        $bestLotteries = Lottery::whereIn('status',['در حال برگزاری','پایان یافته'])->orderBy('count_of_view','DESC')->paginate(10);
         return view('users.home',compact('otherLotteries','users','lotteryManagers','lotteryStocks','myLotteries','lotteryInvites','bestLotteries'));
 
     }
@@ -104,8 +103,8 @@ class LotteryController extends Controller
             $lottery = Lottery::create([
                 'lottery_manager_id' => auth()->user()->lotterymanager->id,
                 'time_of_first_lot' => $miladiTime,
-                'slug' => str_replace(["صندوق ","بانک ","سهام عدالت "],"",$request->name),
-                "name" => str_replace(["صندوق ","بانک ","سهام عدالت "],"",$request->name),
+                'slug' => str_replace(["صندوقچه","صندوق ","بانک ","سهام عدالت ","صندوق","بانک","سهام عدالت"],"",$request->name),
+                "name" => str_replace(["صندوقچه","صندوق ","بانک ","سهام عدالت ","صندوق","بانک","سهام عدالت"],"",$request->name),
                 "amount" => $amount,
                 "cycle" => $request->cycle,
                 "count_of_lots" =>$request->count_of_lots,
