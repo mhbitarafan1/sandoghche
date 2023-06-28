@@ -49,7 +49,7 @@ class LotteryController extends Controller
 
         }
 
-        $bestLotteries = Lottery::whereIn('status',['در حال برگزاری','پایان یافته'])->orderBy('count_of_view','DESC')->paginate(10);
+        $bestLotteries = Lottery::orderBy('count_of_view','DESC')->paginate(10);
         return view('users.home',compact('otherLotteries','users','lotteryManagers','lotteryStocks','myLotteries','lotteryInvites','bestLotteries'));
 
     }
