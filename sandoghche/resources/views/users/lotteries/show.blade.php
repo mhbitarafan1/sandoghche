@@ -711,6 +711,12 @@
                                             </a>
                                             @endif
 
+                                            @if ($amIManager)
+                                                    <a href="{{ route('lotteries.edit',[$lottery->id]) }} " style="margin-right:0px;font-size: 17px; " class="btn btn-info  btn-block">
+                                                        <i class="fa fa-edit"> </i> ویرایش صندوق
+                                                    </a>
+                                            @endif
+
                                                 @if ($lottery->status == 'در حال عضوگیری')
                                                 <form method="post" class="" action="{{ route('lotteries.destroy',$lottery->id) }}">
                                                     @method('DELETE')

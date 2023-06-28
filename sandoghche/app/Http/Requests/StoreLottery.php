@@ -40,4 +40,11 @@ class StoreLottery extends FormRequest
         ];
     }
 
+    public function messages()
+    {
+        return[
+            'short_description.max' => 'توضیحات بسیار طولانی می باشد',
+        ];
+    }
+
 }

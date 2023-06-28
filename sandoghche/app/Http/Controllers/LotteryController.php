@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Notifications\ProblemNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
+use Illuminate\Support\Facades\Auth;
 use Verta;
 use Carbon\Carbon;
 use App\Http\Requests\StoreLottery;
@@ -267,7 +268,8 @@ class LotteryController extends Controller
      */
     public function edit($id)
     {
-        //
+        $lottery = Lottery::find($id);
+        return view('users.lotteries.edit',compact('lottery'));
     }
 
     /**
@@ -279,7 +281,19 @@ class LotteryController extends Controller
      */
     public function update(Request $request, $id)
     {
-        return "ok";
+        $lottery = Lottery::find($id);
+        $lotteryManager = User::where('id',LotteryManager::where('id',$lottery->lottery_manager_id)->first()->user_id)->first();
+        if(Auth::user()->id != $lotteryManager->id)
+        {
+            Alert::warning('خطا', 'فقط مدیر میتونه ویرایش کنه');
+            return back();
+        }
+        $lottery = Lottery::find($id);
+        $this->validate($request,['short_description'=>'string|max:255|nullable',]);
+        $lottery->update([
+            'short_description' => $request->short_description,
+        ]);
+        return redirect(route('lotteries.show',$lottery->id));
     }
 
     /**
