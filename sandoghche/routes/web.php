@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/','LotteryController@redirectToLogin');
 
 Route::get('clear','LotteryController@clearCache')->name('clear.cache');
+Route::get('sendsms/{type}','LotteryController@sendSms')->name('sms.send');
 // Route::get('migrate',function ()
 // {
 //     Artisan::call('migrate');

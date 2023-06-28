@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Notifications\ProblemNotification;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Artisan;
 use Verta;
@@ -602,6 +603,34 @@ class LotteryController extends Controller
         Artisan::call('config:cache');
         Artisan::call('optimize');
         return 'ok';
+    }
+    public function sendSms($type){
+        return 'جهت ارسال اس ام اس خط اول فانکشن سند اس ام اس در لاتاری کنترلر کامنت شود. با سپاس';
+        $lotteries = Lottery::all();
+        switch ($type)
+        {
+            case "problemnotification":
+                $sentUsersIds = array();
+                foreach ($lotteries as $lottery)
+                {
+                    //send SMS problem notification for manager of Lottery
+                    $lotteryManager = User::where('id',LotteryManager::where('id',$lottery->lottery_manager_id)->first()->user_id)->first();
+//                    $userName = $lotteryManager->name;
+                    if (!in_array($lotteryManager->id,$sentUsersIds))
+                    {
+                        $userName = 'کاربر';
+                        $problemTitle = 'نصب اپلیکیشن';
+                        $phoneNumber = $lotteryManager->phone_number;
+                        $lotteryManager->notify(new ProblemNotification($userName,$problemTitle,$phoneNumber));
+                        $sentUsersIds[] = $lotteryManager->id;
+                    }
+                }
+                break;
+
+
+
+        }
+        return 'sms sent';
     }
     public function redirectToLogin(){
         return redirect('/login');
