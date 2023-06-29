@@ -97,13 +97,13 @@
                                @if ($installment->paid)
                                     @if ($installment->confirmed_by == 'سامانه')
 
-                                    <span class="label label-success">پرداخت  به سامانه</span>
+                                    <span class="label label-success">پرداخت  آنلاین</span>
 
 
                                     @elseif($installment->confirmed_by == 'مدیر قرعه کشی')
                                     <span class="label bg-green">
 
-                                    تایید مدیر صندوق</span>
+                                    دریافت مدیر</span>
 
                                     @endif
                                 @else
