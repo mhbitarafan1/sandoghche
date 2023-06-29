@@ -225,7 +225,7 @@
                                 @else
 
 
-                                    @if($nextLot->number <= 2)
+                                        @if($nextLot->number <= 3 or $lottery->upgraded == 1)
                                             <form action="{{ route('installments.manage',$nextLot->id) }}">
                                                 @csrf
                                                 <div class="text-center"><br>
