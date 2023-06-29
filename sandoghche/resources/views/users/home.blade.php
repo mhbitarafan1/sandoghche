@@ -424,13 +424,16 @@
                                                         {{$users->find($lotteryManagers->find($lottery->lottery_manager_id)->user_id)->name}}
 
                                                         <br>
-                                                        <div style="color: #f6c255;font-size: 0.78rem; ">
-                                                            <li class="fa fa-star-o"></li>
-                                                            <li class="fa fa-star-o"></li>
-                                                            <li class="fa fa-star-o"></li>
-                                                            <li class="fa fa-star-o"></li>
-                                                            <li class="fa fa-star"></li>
-                                                        </div>
+                                                    <div style="color: #f6c255;font-size: 0.78rem; ">
+                                                        @for($i=5 ; $i>=1 ; $i--)
+                                                            @if($i <= $users->find($lotteryManagers->find($lottery->lottery_manager_id)->user_id)->points)
+                                                                <li class="fa fa-star"></li>
+                                                            @else
+                                                                <li class="fa fa-star-o"></li>
+                                                            @endif
+                                                        @endfor
+
+                                                    </div>
 
 
 
@@ -697,11 +700,14 @@
 
                                                                     <br>
                                                                     <div style="color: #f6c255;font-size: 0.78rem; ">
-                                                                        <li class="fa fa-star-o"></li>
-                                                                        <li class="fa fa-star-o"></li>
-                                                                        <li class="fa fa-star-o"></li>
-                                                                        <li class="fa fa-star-o"></li>
-                                                                        <li class="fa fa-star"></li>
+                                                                        @for($i=5 ; $i>=1 ; $i--)
+                                                                            @if($i <= $users->find($lotteryManagers->find($lottery->lottery_manager_id)->user_id)->points)
+                                                                                <li class="fa fa-star"></li>
+                                                                            @else
+                                                                                <li class="fa fa-star-o"></li>
+                                                                            @endif
+                                                                        @endfor
+
                                                                     </div>
 
 
@@ -966,16 +972,16 @@
                                             {{$users->find($lotteryManagers->find($lottery->lottery_manager_id)->user_id)->name}}
 
                                             <br>
-                                            <div style="color: #f6c255;font-size: 0.78rem; ">
+                                        <div style="color: #f6c255;font-size: 0.78rem; ">
+                                            @for($i=5 ; $i>=1 ; $i--)
+                                                @if($i <= $users->find($lotteryManagers->find($lottery->lottery_manager_id)->user_id)->points)
+                                                    <li class="fa fa-star"></li>
+                                                @else
+                                                    <li class="fa fa-star-o"></li>
+                                                @endif
+                                            @endfor
 
-                                            {{-- <li class="fa fa-star-o"></li>
-                                            <li class="fa fa-star-half"></li> --}}
-                                            <li class="fa fa-star-o"></li>
-                                            <li class="fa fa-star-o"></li>
-                                            <li class="fa fa-star-o"></li>
-                                            <li class="fa fa-star-o"></li>
-                                            <li class="fa fa-star"></li>
-                                            </div>
+                                        </div>
 
 
 
