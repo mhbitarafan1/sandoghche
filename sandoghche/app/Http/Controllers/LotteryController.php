@@ -105,8 +105,13 @@ class LotteryController extends Controller
             $lottery = Lottery::create([
                 'lottery_manager_id' => auth()->user()->lotterymanager->id,
                 'time_of_first_lot' => $miladiTime,
+
+
+                //Attention :: after add forbidden worlds you must add to Rule:notIn at StoreLottery.php file
                 'slug' => str_replace(["صندوقچه","صندوق ","بانک ","سهام عدالت ","صندوق","بانک","سهام عدالت"],"",$request->name),
                 "name" => str_replace(["صندوقچه","صندوق ","بانک ","سهام عدالت ","صندوق","بانک","سهام عدالت"],"",$request->name),
+
+
                 "amount" => $amount,
                 "cycle" => $request->cycle,
                 "count_of_lots" =>$request->count_of_lots,
