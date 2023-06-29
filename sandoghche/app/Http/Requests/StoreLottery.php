@@ -26,7 +26,7 @@ class StoreLottery extends FormRequest
     {
         return [
             'name' => 'required|max:80',
-            'name' => Rule::notIn(['صندوقچه', 'صندقچه']),
+            'name' => Rule::notIn(['صندوقچه', 'صندقچه','صندوق','بانک','سهام عدالت']),
             'amount' => 'required|max:15',
             'day' => 'required|digits_between:1,31',
             'month' => 'required|numeric|min:1|max:12',
