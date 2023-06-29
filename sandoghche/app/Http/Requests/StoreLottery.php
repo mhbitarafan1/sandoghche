@@ -44,6 +44,7 @@ class StoreLottery extends FormRequest
     {
         return[
             'short_description.max' => 'توضیحات بسیار طولانی می باشد',
+            'hour.numeric' => 'ساعت انتخابی را از نوع عددی انتخاب کنید',
         ];
     }
 
