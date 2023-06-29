@@ -14,7 +14,9 @@ class Kernel extends ConsoleKernel
      */
     protected $commands = [
         Commands\runLotsThisTime::class,
-        Commands\sendInstallmentReminds::class
+        Commands\sendInstallmentReminds::class,
+        Commands\calculatePointsOfUsers::class,
+
     ];
 
     /**
@@ -31,6 +33,7 @@ class Kernel extends ConsoleKernel
         // $schedule->command('runLotsThisTime:hourly')->hourlyAt(1);
         $schedule->command('runLotsThisTime:hourly')->hourly();
         $schedule->command('sendInstallmentReminds:daily')->dailyAt("17:00");
+        $schedule->command('calculatePointsOfUsers:monthly')->monthlyOn(1,"3:0");
 
     }
 
