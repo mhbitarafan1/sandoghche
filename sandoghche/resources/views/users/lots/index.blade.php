@@ -23,11 +23,11 @@
         <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel" style="padding-left: 5px;padding-right: 5px;">
-                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
-                        <div style="text-align: center;">
-                            <div id="mediaad-P80eX" ></div>
-                        </div>
-                    @endif
+{{--                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))--}}
+{{--                        <div style="text-align: center;">--}}
+{{--                            <div id="mediaad-P80eX" ></div>--}}
+{{--                        </div>--}}
+{{--                    @endif--}}
 
                     <div class="x_title">
                         <h2>قرعه های صندوق

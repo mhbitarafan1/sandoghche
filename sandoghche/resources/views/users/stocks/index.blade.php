@@ -44,11 +44,15 @@
                         </ul>
                         <div class="clearfix"></div>
                     </div> --}}
-                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
-                                    <div style="text-align: center;">
-                                        <div id="mediaad-Eg4Yg" ></div>
-                                    </div>
-                                     @endif
+
+
+{{--                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))--}}
+{{--                                    <div style="text-align: center;">--}}
+{{--                                        <div id="mediaad-Eg4Yg" ></div>--}}
+{{--                                    </div>--}}
+{{--                                     @endif--}}
+
+
                     <div class="x_content" style="padding-left: 0px;padding-right: 0px;">
 
                         <div class="panel-body" style="padding: 5px;">

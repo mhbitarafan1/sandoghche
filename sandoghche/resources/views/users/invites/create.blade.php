@@ -50,11 +50,11 @@
                         <div class="clearfix"></div>
                     </div> --}}
 
-                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
-                        <div style="text-align: center;">
-                            <div id="mediaad-qnVYz" ></div>
-                        </div>
-                    @endif
+{{--                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))--}}
+{{--                        <div style="text-align: center;">--}}
+{{--                            <div id="mediaad-qnVYz" ></div>--}}
+{{--                        </div>--}}
+{{--                    @endif--}}
 
                     <div class="x_content">
                         {{-- در این مرحله کافیست دوستان شما وارد صندوقچه شوند و درخواست عضویت در صندوق شما را ثبت نمایند.<br> --}}

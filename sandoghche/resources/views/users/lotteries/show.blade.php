@@ -40,11 +40,13 @@
             <div class="col-md-12">
                 <div class="x_panel" style="padding-left: 5px;padding-right: 5px;">
 
-                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
-                    <div style="text-align: center;">
-                        <div id="mediaad-v9RA2"></div>
-                    </div>
-                    @endif
+
+{{--                    @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))--}}
+{{--                    <div style="text-align: center;">--}}
+{{--                        <div id="mediaad-v9RA2"></div>--}}
+{{--                    </div>--}}
+{{--                    @endif--}}
+
                     {{-- <div class="x_title">
                         <h2>صندوق  {{$lottery->name}}</h2>
                         <ul class="nav navbar-right panel_toolbox">
