@@ -44,17 +44,13 @@
     <link href="/users/build/css/custom.min.css" rel="stylesheet">
 
     @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
-    <script type="text/javascript">
-        (function(){
-        var now = new Date();
-        var head = document.getElementsByTagName('head')[0];
-        var script = document.createElement('script');
-        script.async = true;
-        var script_address = 'https://cdn.yektanet.com/js/sandoghche.mhbitarafan.ir/native-sandoghche.mhbitarafan.ir-26783.js';
-        script.src = script_address + '?v=' + now.getFullYear().toString() + '0' + now.getMonth() + '0' + now.getDate() + '0' + now.getHours();
-        head.appendChild(script);
-        })();
-    </script>
+
+{{--        yektanet script--}}
+        <script>
+            !function(e,t,n){e.yektanetAnalyticsObject=n,e[n]=e[n]||function(){e[n].q.push(arguments)},e[n].q=e[n].q||[];var a=t.getElementsByTagName("head")[0],r=new Date,c="https://cdn.yektanet.com/superscript/xPDSQ43o/native-sandoghche.mhbitarafan.ir-26783/yn_pub.js?v="+r.getFullYear().toString()+"0"+r.getMonth()+"0"+r.getDate()+"0"+r.getHours(),s=t.createElement("link");s.rel="preload",s.as="script",s.href=c,a.appendChild(s);var l=t.createElement("script");l.async=!0,l.src=c,a.appendChild(l)}(window,document,"yektanet");
+        </script>
+
+{{--            mediadd script--}}
     <script type="text/javascript">
         const head = document.getElementsByTagName("head")[0];
         const script = document.createElement("script");
@@ -63,6 +59,7 @@
         script.src = "https://s1.mediaad.org/serve/sandoghche.mhbitarafan.ir/loader.js";
         head.appendChild(script);
     </script>
+
     @endif
 
 </head>
