@@ -586,14 +586,14 @@
 
                                                 @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
 
-                                                    @if (($key+1) == 4)
+                                                    @if (($key+1) == 6)
                                                         <div class="col-md-4 col-sm-4 col-xs-12 profile_details" style="padding-left: 0px;padding-right: 0px;">
                                                             <div class="well profile_view" style="margin-bottom:5px; background-color: #fff;">
                                                                 <div id="pos-article-display-74756"></div>
                                                             </div>
                                                         </div>
                                                     @endif
-                                                    @if (($key+1) == 10)
+                                                    @if (($key+1) == 11)
                                                         <div class="col-md-4 col-sm-4 col-xs-12 profile_details" style="padding-left: 0px;padding-right: 0px;">
                                                             <div class="well profile_view" style="margin-bottom:5px; background-color: #fff;">
                                                                 <div id="pos-article-display-74757"></div>
@@ -858,14 +858,14 @@
 
                     @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
 
-                    @if (($key+1) == 4)
+                    @if (($key+1) == 6)
                     <div class="col-md-4 col-sm-4 col-xs-12 profile_details" style="padding-left: 0px;padding-right: 0px;">
                         <div class="well profile_view" style="margin-bottom:5px; background-color: #fff;">
                             <div id="pos-article-display-74756"></div>
                         </div>
                     </div>
                     @endif
-                    @if (($key+1) == 10)
+                    @if (($key+1) == 11)
                     <div class="col-md-4 col-sm-4 col-xs-12 profile_details" style="padding-left: 0px;padding-right: 0px;">
                         <div class="well profile_view" style="margin-bottom:5px; background-color: #fff;">
                             <div id="pos-article-display-74757"></div>
