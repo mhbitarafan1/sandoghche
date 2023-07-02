@@ -124,7 +124,7 @@
                                                      <p><i class="fa fa-search"></i>&nbsp;&nbsp;&nbsp;<strong>توضیحات :</strong> {{$lottery->short_description}}
                                                      </p>
                                                    @if($lottery->type_of_income!='none')
-                                                       <i class='text-danger' >*قرعه ی اول برای مدیر می باشد.</i>
+                                                       <i class='text-danger' >*قرعه ی اول برای مدیر می باشد.</i><br>
                                                    @endif
 
 
