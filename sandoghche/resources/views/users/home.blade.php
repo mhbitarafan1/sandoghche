@@ -296,6 +296,7 @@
 
         @if (auth()->user()->created_at < Carbon\Carbon::now()->subDays(45))
         <div id="pos-article-display-74594"></div>
+            <br>
         @endif
         <br><br>
 

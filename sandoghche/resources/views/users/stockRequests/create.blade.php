@@ -68,10 +68,11 @@
                     			<li>{{$error}}</li>
                     		@endforeach
                         </div>
+                            <br/>
                     	@endif
 
 
-                        <br/>
+
                         <form method="POST"  action="{{ route('stockrequests.store') }}" id="demo-form2" data-parsley-validate class="form-horizontal form-label-left">
                         	@csrf
 
@@ -82,7 +83,7 @@
 
 
                             <div class="form-group">
-                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">نام قرعه کشی
+                                <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">نام صندوق
                                     <span class="required">*</span>
                                 </label>
                                 <div class="col-md-6 col-sm-6 col-xs-12">

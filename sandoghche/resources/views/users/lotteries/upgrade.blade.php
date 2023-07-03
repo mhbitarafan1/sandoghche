@@ -58,7 +58,7 @@
     @endif
 
     <strong>امکانات نسخه ارتقا یافته :</strong><br>
-    <i class="fa fa-check green"></i> تمامی امکانات نسخه رایگان<br>
+{{--    <i class="fa fa-check green"></i> تمامی امکانات نسخه رایگان<br>--}}
     <i class="fa fa-check green" ></i> اطلاع رسانی پیامکی تمام رویدادهای صندوق<br>
     <i class="fa fa-check green"></i> عدم نمایش اکثریت محتوای تبلیغاتی برنامه<br>
     <i class="fa fa-check green"></i> یادآوری اقساط به اعضا از طریق پیامک<br>
