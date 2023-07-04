@@ -313,7 +313,7 @@ class LotteryController extends Controller
         if ($countOfPastLot < 1) {
             //Lot::where('lottery_id',$id)->delete();
             Lottery::where('id',$id)->first()->delete();
-            Alert::success('موفقیت آمیز', 'قرعه کشی موردنظر با موفقیت حذف شد');
+            Alert::success('موفقیت آمیز', 'صندوق موردنظر با موفقیت حذف شد');
             return redirect(route('home'));
         }else{
 
