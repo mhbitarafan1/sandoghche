@@ -65,9 +65,9 @@ class sendInstallmentReminds extends Command
             $phoneNumber = $lotteryManager->phone_number;
             $lotteryManager->notify(new ManagerRemind($userName,$lotteryName,$phoneNumber));
 
-            if ($lotteryOfThisLot->upgraded == false) {
-                continue;
-            }
+//            if ($lotteryOfThisLot->upgraded == false) {
+//                continue;
+//            }
             $installmentsNeedRemind = $onTimeLot->installments()->get();
             foreach ($installmentsNeedRemind as $installment) {
 
