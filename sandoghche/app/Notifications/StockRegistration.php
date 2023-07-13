@@ -42,7 +42,7 @@ class StockRegistration extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% سهم از صندوق %param2% با مدیریت %param3% به شما تعلق گرفت. جهت مشاهده جزئیات وارد حساب خود در اپلیکیشن صندوقچه شوید.
+            'text' => "%param1% سهم از صندوق %param2% با مدیریت %param3% به شما تعلق گرفت. مشاهده جزئیات در اپلیکیشن صندوقچه
             \nhttps://cafebazaar.ir/app/ir.mhbitarafan.sandoghche
             \nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
