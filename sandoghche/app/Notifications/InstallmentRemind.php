@@ -42,7 +42,7 @@ class InstallmentRemind extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% عزیز\nموعد پرداخت قسط شما در صندوق %param2% نزدیک شده است.\nلطفا تا قبل از %param3% پرداخت نمایید.\nصندوقچه",
+            'text' => "%param1% عزیز\nموعد پرداخت قسط شما در صندوق %param2% نزدیک شده است.\nلطفا تا قبل از %param3% پرداخت نمایید.\nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->userName,
             'param2' => $this->lotteryName,

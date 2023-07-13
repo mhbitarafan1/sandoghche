@@ -41,7 +41,7 @@ class ActivationCode2Notification extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "کد ثبت نام \n:%param1%\nصندوقچه{$this->code}صندوقچه",
+            'text' => "کد ثبت نام \n:%param1%\nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->code,
             'param2' => null,

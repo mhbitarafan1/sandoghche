@@ -40,7 +40,7 @@ class ManagerRemind extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% عزیز\nموعد پرداخت اقساط صندوق %param2% نزدیک شده است.\nلطفا پرداختی هر یک از اعضا را تایید نمایید.\nبا تشکر - صندوقچه",
+            'text' => "%param1% عزیز\nموعد پرداخت اقساط صندوق %param2% نزدیک شده است.\nلطفا پرداختی هر یک از اعضا را تایید نمایید.\nبا تشکر - صندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->userName,
             'param2' => $this->lotteryName,

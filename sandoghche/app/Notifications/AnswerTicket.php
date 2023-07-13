@@ -40,7 +40,7 @@ class AnswerTicket extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% عزیز\nپاسخی به درخواست پشتیبانی شما با موضوع %param2% ارسال شده است.\nصندوقچه",
+            'text' => "%param1% عزیز\nپاسخی به درخواست پشتیبانی شما با موضوع %param2% ارسال شده است.\nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->userName,
             'param2' => $this->titleTicket,

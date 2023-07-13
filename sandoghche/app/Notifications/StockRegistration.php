@@ -44,7 +44,7 @@ class StockRegistration extends Notification
         return [
             'text' => "%param1% سهم از صندوق %param2% با مدیریت %param3% به شما تعلق گرفت. جهت مشاهده جزئیات وارد حساب خود در اپلیکیشن صندوقچه شوید.
             \nhttps://cafebazaar.ir/app/ir.mhbitarafan.sandoghche
-            \nصندوقچه",
+            \nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->stockCount,
             'param2' => $this->lotteryName,

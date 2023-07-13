@@ -42,7 +42,7 @@ class StockConfirm extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% عزیز\n%param2% سهم از صندوق %param3% به شما تعلق گرفت.\nصندوقچه",
+            'text' => "%param1% عزیز\n%param2% سهم از صندوق %param3% به شما تعلق گرفت.\nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->userName,
             'param2' => $this->stockCount,

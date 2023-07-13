@@ -44,7 +44,7 @@ class CancellOwnerStockByLotteryManager extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% عزیز\nمالکیت سهام شماره %param2% شما در صندوق %param3% توسط مدیر لغو شد.\nصندوقچه",
+            'text' => "%param1% عزیز\nمالکیت سهام شماره %param2% شما در صندوق %param3% توسط مدیر لغو شد.\nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' =>  $this->userName,
             'param2' => $this->stockNumber,

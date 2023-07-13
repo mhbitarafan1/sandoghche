@@ -42,7 +42,7 @@ class WinnerLot extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% عزیز\nقرعه امروز به نام شما درآمده است.\nسهام شماره %param2% | صندوق %param3%\nصندوقچه",
+            'text' => "%param1% عزیز\nقرعه امروز به نام شما درآمده است.\nسهام شماره %param2% | صندوق %param3%\nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->userName,
             'param2' => $this->stockNumber,

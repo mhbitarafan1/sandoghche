@@ -42,7 +42,7 @@ class ProblemNotification extends Notification
     public function toGhasedakSms($notifiable)
     {
         return [
-            'text' => "%param1% عزیز\nبابت مشکل ایجادشده در %param2% پوزش می طلبیم و به زودی برطرف خواهد شد. سپاس از همراهی شما.\nصندوقچه",
+            'text' => "%param1% عزیز\nبابت مشکل ایجادشده در %param2% پوزش می طلبیم و به زودی برطرف خواهد شد. سپاس از همراهی شما.\nصندوقچه\nلغو11",
             'number' => $this->phoneNumber,
             'param1' => $this->userName,
             'param2' => $this->problemTitle,
