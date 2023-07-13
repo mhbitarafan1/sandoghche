@@ -289,7 +289,7 @@ class StockRequestController extends Controller
         $user->notify(new CancellOwnerStockByLotteryManager($userName,$stockNumber,$lotteryName,$phoneNumber));
 
         $lotteryId = $stock->lottery_id;
-        return redirect(route('lotteries.show',$lotteryId));
+        return redirect(route('stocks.lottery.index',$lotteryId));
 
     }
     public function addStockforLotteryManager($id)
